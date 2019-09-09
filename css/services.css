@@ -1,0 +1,95 @@
+
+
+.services-header-img {
+    width: 880px;
+    padding-top: 20px;
+}
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.services p{
+display: flex;
+flex-direction: row;
+padding-bottom: 20px;
+flex-wrap: wrap;
+font-size: 16px;
+
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.boxes1 {
+    height: 250px; 
+    width: 420px;
+    border: 1px black solid;
+    margin-right: 20px;   
+    margin-bottom : 20px;
+    padding: 20px;
+    background: #F4F3F4;
+   
+}
+.boxes2 {
+    height: 250px; 
+    width: 420px;
+    border: 1px black solid;
+    margin-left: 20px;
+    margin-bottom : 20px;
+    padding: 20px;
+    background: #F4F3F4;
+   
+}
+.facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 2px black solid;
+    padding-top: 20px;
+}
+.facts-box1 {
+    height: 300px;
+    width: 420px;
+    margin-right: 20px; 
+  
+}
+.facts-box2 {
+    height: 300px;
+    width: 420px;
+    margin-left: 20px; 
+}
+.services-info-img{
+    width:400px;
+    
+    margin-left:15px;
+}
+button {
+    border-radius: 5%;
+    background: white;
+	vertical-align: top;
+	margin-top: 25px;
+	padding: 8px 44px;
+	font-size: 17px;
+	border: 1px solid black;
+    cursor: pointer;   
+}
+
+.facts ui{
+    padding: 10px;
+}
+li{
+    margin: 10px 0;
+}
