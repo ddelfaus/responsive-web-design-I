@@ -162,14 +162,14 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .top-content {
-	padding: 0 10px;
+	/* padding: 0 10px; */
   }
   .top-content{
 	  display: flex;
 	  flex-direction: row;
   }
   .main-content .top-content .text-content {
-	width: 410px;
+	width: 55%;
 	/* display: inline-block; */
 	margin-right: 34px;
   }
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5 {
   
   .main-content .bottom-content {
 	margin-top: 37px;
-	padding: 0 10px;
+	/* padding: 0 10px; */
 	padding-bottom: 50px;
 	border-bottom: 1px solid black;
 
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5 {
 	 
   }
   .main-content .bottom-content .text-content {
-	width: 275px;
+	width: 55%;
 	/* display: inline-block; */
 	margin-right: 12px;
   }
@@ -204,12 +204,13 @@ h1, h2, h3, h4, h5 {
 	margin-right: 0;
   }
   
-  .contact {
+  .contact-box{
 	margin-top: 20px;
-	
-	padding: 39px 10px 0;
+	display: flex;
+	flex-direction: row;
+	/* padding: 39px 0px 0; */
 	margin-right: auto;
-	margin-right: 700px;
+	/* margin-right: 700px; */
   }
   
   .contact p {
@@ -233,53 +234,87 @@ h1, h2, h3, h4, h5 {
 
 
 @media screen and (max-width: 800px){
+	.container {
+		width:680px;
+		/* TB LR */
+	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* flex-wrap: wrap; */
+	  }
 
 
+	.code-pic {
+		display: none;
+	}
+	
+.logo {
+	order:-6;
+	margin-right: 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+   
+}
+
+.main-content {
+	width: 88%
+}
+.middle-img {
+	width:100% ;
+}
+.contact-box {
+	margin-left: 60px;
+}
 
 }
 
 
 @media screen and (max-width: 500px){
-*{
- 
+* {
+	
 }
-
- header {
-    display: flex;
-    flex-direction: column;
+.container {
+	width: 260%;
+	/* TB LR */
+	/* margin: 0 auto; */
+	display: flex;
+	flex-direction: column;
 	 align-items: center; 
-	 justify-content: center;
-    
-}
+	justify-content: center;
+	/* flex-wrap: wrap; */
+	
+  }
 
-header nav{
-    display: flex;
+header{
+	width: 500px
+
+}
+header nav {
+	display:flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	margin: 1px;
+	justify-content: space-evenly;
 	
 }
-
-header .logo{
-	display: flex;
-	margin-right: 40px;
-	order: -1;
-	padding: 15px 500px;
-	border-bottom: 1px solid black;
-
-	margin-bottom: 1px;
-}
-
 header nav a{
-	box-sizing: content-box;
-  
-	font-size: 200%;
-	padding:25px 100%;
-	border-bottom: 1px solid black;
-	
+	font-size:25px;
 }
-
+ a{
+	 width:450px;
+	 align-self: center;
+	 text-align:center;
+	border-bottom: 1px solid black;
+	padding: 15px 10px;
+}
+header nav a:first-child{
+	border-top: 1px solid black;
+} 
 
 header nav a:last-child {
     margin-right: 60px;
@@ -288,14 +323,25 @@ header nav a:last-child {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	margin-right: 80px;
+	
+	/* margin-right: 80px; */
 	
 	/* border: 1px solid black; */
 }
 .cta-text{
+	
 	/* border: 1px solid black; */
 	/* margin-top: 20%; */
 }
+.cta-text h1{
+	font-size: 125%;
+} 
+.cta .cta-text button {
+
+	font-size: 50%;
+	
+  }
+
 .code-pic {
     display: none;
 }
@@ -303,40 +349,62 @@ header nav a:last-child {
 .top-content{
 	display: flex;
 	flex-direction: column;
-	
+	font-size: 135%;
 	align-items: center;
+	
 }
 .text-content {
-	margin: 25px 0;
+	width:55%;
+	margin: 3% 0;
+} 
+.main-content .bottom-content .text-content {
+	width: 55%;
+	
 }
 .middle-img-box{
 	display: flex;
 	justify-content: center;
 }
+
 .main-content .top-content .text-content:last-child {
 	margin-right: 30px;
   }
 .middle-img {
-	width: 50%;
-	height: 50%;
+	width:58%;
+	height: 55%;
 	margin: 0;
 }
 
 .bottom-content {
 	display: flex;
 	flex-direction: column;
-	
+	font-size: 135%;
 	align-items: center;
-	margin-right: 0px;
+	
+	
 }
+.main-content .bottom-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+.main-content .bottom-content .text-content {
+	/* width: 55%; */
+	/* display: inline-block; */
+	/* margin-right: 12px; */
+  }
 
 .main-content .bottom-content .text-content:last-child {
-	margin-right: 30px;
+	 margin-right: 5px; 
   }
 .contact-box {
+	width: 55%;
 	display: flex;
-	margin-right: 300px;
-	align-items: flex-start;
+	 justify-content: center;
+	
+	
   }
 } 
 
